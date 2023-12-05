@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Example class</title>
+</head>
+<body>
+	<!-- <script type="text/javascript">
+		class Employee{
+			constructor(id,name){
+				this.id=id;
+				this.name=name;
+			}
+			details(){
+				document.writeln(this.id + " " + this.name + "<br>");
+			}
+		}
+		var object1=new Employee(1,"Sandeep");
+		object1.details();
+		var object2=new Employee(2,"kumar");
+		object2.details();
+	</script> -->
+	<!-- Another method for implementing class using expression -->
+<!-- 	<script type="text/javascript">
+		var object1 = class{
+			constructor(id,name){
+				this.id=id;
+				this.name=name;
+			}
+
+	};
+	document.writeln(object1.name);
+
+	</script> -->
+	<!-- By redefining the class we can use same class multiple times -->
+	<script type="text/javascript">
+		var emp= class{
+			constructor(id,name){
+				this.id=id;
+				this.name=name;
+			}
+			details(){
+				document.writeln(this.id + " " + this.name + "<br>");
+			}
+		}
+		var object1=new emp(1,"sandeep");
+		object1.details();
+		var object2=new emp(2,"karan");
+		object2.details();
+		var emp= class{
+			constructor(id,name){
+				this.id=id;
+				this.name=name;
+			}
+			details(){
+				document.writeln(this.id + " " + this.name + "<br>");
+			}
+		}
+		var object3=new emp(3,"Ramesh");
+		object3.details();
+		var object4=new emp(4,"Trisha");
+		object4.details();
+
+		
+	</script>
+
+	
+</body>
+</html>

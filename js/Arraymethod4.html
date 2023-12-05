@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Array Method  part 4</title>
+</head>
+<body>
+	<script type="text/javascript">
+		// of() method
+		
+		document.writeln("array generated using of():" + Array.of(1,5,8,9,4));
+		console.log(Array.of(2,4,6,8,9));
+
+		// push() and pop() method  using array
+		document.writeln("<br>");
+		var arr1 =[5,9,4];
+		arr1.push(6);
+		arr1.push(3);
+
+		document.writeln("Ad 6 using push():" + arr1);
+
+		document.writeln("<br>")
+		arr1.pop();
+		arr1.pop();
+		document.writeln("Array after pop method" + arr1);
+
+		//Reverse in Array
+		document.writeln("Rever of array using reverse() method :" + arr1.reverse() + "<br>" );
+
+
+		//reduce method=it reduces the value from left to right
+		var arr2=[4,9,5,1];
+		var a= arr2.reduce(function(accumulator,currentvalue){
+			return accumulator*currentvalue;
+
+		});
+		document.writeln('Result after reduce function():' + a);
+
+
+		//some() function using array=some element which satisfy the condition 
+		var arr3=[51,85,63,20];
+		function test(argument){
+			return argument>50;
+		}
+		var result=arr3.some(test);
+		document.writeln("The result after performing some fuction is ;" + result);
+
+
+		//shift()
+		document.writeln(" Remoing first elemnt of array and return it <br>" + arr3.shift());
+
+		//slice() it return the new array
+		var arr4=[4,6,7,8,9,1,2,3,4,5,7,5];
+		var sliceArray=arr4.slice(4,6);
+		document.writeln("New array after operation <br>" + sliceArray);
+
+
+
+
+
+
+
+
+
+
+
+		
+
+
+
+	</script>
+
+</body>
+</html>

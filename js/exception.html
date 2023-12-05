@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Example try...catch throw</title>
+</head>
+<body>
+	<!-- Please enter a number between 5 to 10
+	<input type="text" id="id1">
+	<button type="button" onclick="onClick()">validate</button>
+	<p id="message"></p>
+	<script type="text/javascript"> -->
+
+		<!-- try -->
+	// 	try{
+	// 	var a=["a","b","c","d"];
+	// 	document.writeln("hello");
+	// 	console.log(a);
+	// 	console.log(b);
+	// }
+	// catch(e){
+	// 	alert("Eroor is :"+e.message);
+
+	// }
+	// document.writeln("hii");
+	throw
+	function onClick(){
+		var message=document.getElementById("message");
+		message.innerHTML= "";
+		try{
+		var x=document.getElementById("id1").value;
+		if(x=="") throw " is Empty";
+		if(isNaN(x)) throw "is not a number";
+		if(x>10) throw "number should be less then 5";
+		if(x<5) throw "number should  not be less than 10";
+
+	}
+	catch(e){
+		message.innerHTML =" Input" + e;
+}
+}
+
+		
+
+	
+
+<!-- 
+	</script> -->
+
+
+Please enter a number between 5 to 10
+	<input type="text" id="id1">
+	<button type="button" onclick="onClick()">validate</button>
+	<p id="message"></p>
+	<p id="input1"></p>
+
+
+	<script type="text/javascript">
+		function onClick(){
+			var input=document.getElementById("input");
+			var message = document.getElementById("message");
+			message.innerHTML="";
+			var x=document.getElementById("id1").value;
+			try{
+				
+				if(x=="") throw " is Empty";
+				if(isNaN(x)) throw " is not a number";
+				if(x > 10) throw " number should not be greater than 10";
+				if( x < 5) throw " number should not be less then 5";
+			}catch(e){
+				message.innerHTML="Input" + e;
+			}finally{
+				input.innerHTML="Input Value:" + x;
+			}
+		}
+		
+	</script>
+
+</body>
+</html>

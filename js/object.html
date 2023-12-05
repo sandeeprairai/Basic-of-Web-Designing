@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Example Object</title>
+</head>
+<body>
+	<script type="text/javascript">
+		document.writeln("<h3>Creating an object in javascript</h3>");
+		// creating an object using object literal
+		var person = {
+			firstname:"sandeep",
+			lastName:"kumar",
+			age:18,
+			eyecolor:"Black"
+
+		}
+		document.writeln("Object details are: " +person.firstname+ " " + person.lastName + " " + person.age );
+		document.writeln("<br>");
+
+		// Creating an object using new keyword
+		var emp=new Object();
+		emp.id=1;
+		emp.name="Sandeep kumar";
+		emp.salary=20000;
+		document.writeln("Object details of emp object:");
+		for(value in emp){
+			document.writeln(emp[value]);
+		}
+
+		//by using object constructer
+		document.writeln("<br>");
+		function employee(id,name,salary){
+			this.id=id;
+			this.name=name;
+			this.salary=salary;
+		}
+		var e= new employee(2,"sandeep",40000);
+		document.writeln("Object details of employee object:")
+		for(value in e) {
+			document.writeln(e[value]+ " ");
+		}
+
+
+
+
+
+
+
+	</script>
+
+</body>
+</html>

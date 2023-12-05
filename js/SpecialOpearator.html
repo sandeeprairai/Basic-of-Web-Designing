@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Example of Special Operator</title>
+</head>
+<body>
+   <script type="text/javascript">
+   	
+   	var x=true;
+   	var y=false;
+
+   	var person ={
+   		firstname: "Joel",
+   		lastname:"Christion",
+   		age:28,
+   		eyecolor: "brown"
+   	};
+
+   	document.write("<h3>Special Operator</h3>");
+   	var z=y ? 2: 4;
+   	document.write("Value of z is :" +z); //if true then first else second value
+   	document.write("<br>");
+   	//comma opearator
+   	let a=(1,2,3);
+   	document.write("value of a is :" +a); //print the last value
+   	document.write("<br>");
+
+   	//Delete opearor
+   	delete person.lastname;
+   	document.write("Delete the last name from the object :" + person.lastname);
+   	document.write("<br>");
+
+   	//in operator
+
+   	var z='age' in person ? true: false;
+   	document.write("if age is exit in object person :" +z);
+
+   	//instance of opeartor
+
+   	document.write("<br>");
+   	document.write("if person is a instance of prototype object:" + (person instanceof Array ));
+   	document.write("<br>");
+   	document.write("Type of x is :" +(typeof x));
+
+   	//void opeartor
+   	document.write("<br>");
+   	javascript:void func();
+
+
+
+
+   </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Example of Bind function</title>
+</head>
+<body>
+	<script type="text/javascript">
+		// var website = {
+		// 	name:"LearnVern",
+		// 	getName: function(){
+		// 		return this.name;
+		// 	}
+		// }
+
+		// var website2 = {
+		// 	name :"sandeep",
+		// }
+
+		// var unboundedGetName = website.getName;
+		// var boundGetname = unboundedGetName.bind(website2);
+
+
+
+		// // document.write(website.getName());
+		// document.write(boundGetname());
+
+
+		document.write("To String Method" + "<br>");
+		function add(num1,num2){
+			return num1+num2;
+		}
+		document.writeln(add.toString()+"<br>");
+		document.writeln("Summation of 10 and 40 is :" + add(10,40).toString());
+	</script>
+
+</body>
+</html>

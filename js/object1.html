@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Example of assign()</title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		// const object1 = {
+		// 	a:1,
+		// 	b:2,
+		// 	c:3
+		// }
+		// const object2 = {
+		// 	d:1,
+		// 	e:2,
+		// 	f:3
+		// }
+
+		// const object3=Object.assign({
+		// 	c:5,
+		// 	d:6 },object1);
+
+		// console.log(object1,object3);
+		// const object4 =Object.assign({g:85,h:100},object2);
+		// console.log(object4);
+
+
+		// create method
+
+
+		// function fruit(){
+		// 	this.name="Grapes";
+
+		// }
+		// function fun(){
+		// 	fruit.call(this);
+		// }
+
+		// fun.prototype = Object.create(fruit.prototype);
+		// const app=new fun();
+		// console.log(app);
+
+
+		// freeze method =prevent existing properties from being removed
+		// isFrozen()=determine if an object was frozen
+
+		// const object1 ={
+		// 	age:19
+		// }
+		// const object2 = Object.freeze(object1);
+		// object2.age = 32;
+
+		// console.log(object2.age);
+
+		// console.log(Object.isFrozen(object2));
+
+// is method=determine whether two values are same or not
+         // const object1 ={
+         // 	age:23
+
+         // }
+         // const object2 ={
+         // 	age:23
+         // }
+         // console.log(Object.is(object1.age,object2.age));
+
+
+// Extensible=check whether new propert added in the object or not
+          // const object1={
+
+          // }
+          // console.log(Object.is(object1));
+          // console.log(Object.isExtensible(object1));
+
+          // Object.isSealed = this method determine whether an object is sealed 
+          // object.isSeal =  seal is apply
+           // const object1 = {
+           // 	name:"abc"
+           // }
+           // const object2 = Object.seal(object1);
+           // object2.name="def";
+           // console.log(object2.name);
+           // delete object2.name;
+           // console.log(object2.name);
+           // console.log(Object.isSealed(object2));
+
+     // Object.values() = this method returns an array of values 
+
+     const object1 = {
+     	a:"abc",
+     	b:23,
+     	c:true
+     }  
+     console.log(Object.values(object1));   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</script>
+
+</body>
+</html>

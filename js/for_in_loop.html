@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Example of For-In  For-off Loop</title>
+</head>
+<body>
+	<script type="text/javascript">
+		// document.write("<h3>Example of for..in Loop </h3>");
+		// var temp="";
+
+		// var person = {
+		// 	firstname: "Sandeep",
+		// 	lastname: "Kumar",
+		// 	age:18,
+
+		// }
+		// for( value in person  ){
+		// 	temp = temp + person[value] + " ";
+		// 	// document.writeln(person[value]);
+
+		// }
+		// document.write(temp);
+
+
+		document.write("<h3>For off loop </h3>");
+		var alphabets=["A","B","C","D","E"];
+
+		document.write("<h3>For off loop with array </h3>");
+
+
+
+
+		// for (let  i=0;i<=alphabets.length-1;i++){
+		// 	document.writeln(alphabets[i]);
+		// }
+
+
+		for(value of  alphabets){
+			document.writeln(value);
+		}
+
+
+		document.write("<h3>For off loop  with String</h3>");
+		var s="Learnvern";
+		for(value of s){
+			document.writeln(value + "<br>" )
+		}
+
+
+
+
+
+	</script>
+
+
+</body>
+</html>

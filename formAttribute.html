@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form  Attribute</title>
+</head>
+<body>
+	<form  id= "form-control" action="submit.html" method="post">
+		<label>First Name:</label>
+		<input type="text" name=" FirstName" required  placeholder="Enter your first Name"  size="8"><br><br>
+
+		<label>Last Name</label>
+		<input type="text" name="LastName" required autofocus disabled><br><br>
+		<label>Contact Number</label>
+
+		<input type="tel" name="Contact Number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Format:123-123-1234"><br><br>
+
+
+
+		<input type="submit" value="Click Me">
+	</form>
+
+	<label>Email:</label>
+	<input type="email" name="email" form="form-control"><br><br>
+
+
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Example Global variable using window object</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var temp="This is a temp variable";
+		function abc(){
+			var y="This is the 'y' variable";
+			window.x="this is a variable"
+			document.write(window.x);
+			alert(window.temp);
+
+		}
+		abc();
+		def();
+		document.write("<br>");
+		document.write(window.y)
+		document.write("<br>");
+		document.write(window.x);
+
+		document.write("<br>");
+		document.write(window.w)
+		document.write("<br>");
+		
+
+		document.write("<br>");
+		document.write(window.z)
+		document.write("<br>");
+		
+
+
+
+
+		function def(){
+			document.write("<br>");
+		document.write(window.x);
+
+		}
+	</script>
+
+
+</body>
+</html>

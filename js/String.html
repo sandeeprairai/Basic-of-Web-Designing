@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Example String</title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		// Create String using Literal
+		var str1 ="Hello";
+		var str2= ' How are you?';
+		var str4="We are learning javascript,Javascript is a wonderfull language:"
+		document.writeln(str1+" " + str2);
+
+		// Create String using new keyword
+		var str3 =new String("I am fine");
+		document.writeln("<br>" + str3);
+		document.writeln("<br><br>");
+
+
+		//String Method
+		// charAt
+		var str="How are you?";
+		document.writeln("Character at 5th position " + str.charAt(5));
+
+		// CharCodeAt()
+		document.writeln("<br> Character  Code at 5th position " + str.charCodeAt(5));
+
+		document.writeln("<br>");
+
+
+		// concat()
+		document.writeln("<br><br>Concateanated string is :" + str1.concat(str2,str4));
+
+		// indexOf()
+		document.writeln("<br><br>Index of 'are' in str2 is:" + str2.indexOf('are'));
+
+
+		// lastIndexOf()
+		document.writeln("<br> Last Index of 'r is " + str2.lastIndexOf('r'));
+
+
+		// search()=Search in  the given 
+		document.writeln("<br>Check if 'JavaScript' exists in str4:" + str4.search('javascript'))
+		document.writeln("<br>Check if 'JavaScript' exists in str4:" + str4.search(/Javascript/i));
+
+		// match()
+		document.writeln("<br>Check if 'JavaScript' exists in str4:" + str4.match('java'));
+		document.writeln("<br>Check if 'JavaScript' exists in str4:" + str4.match('Language'));
+		document.writeln("<br>Check if 'JavaScript' exists in str4:" + str4.match(/Language/i));
+
+
+
+
+
+
+
+
+	</script>
+
+</body>
+</html>

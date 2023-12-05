@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Example function Object</title>
+</head>
+<body>
+	<script type="text/javascript">
+		// var add = new Function("num1","num2","return num1 + num2");
+		// document.writeln(add(2,8));
+		// document.writeln(add(10,20));
+		// var power = new Function("num1","num2","return Math.pow(num1,num2)");
+		// document.writeln(power(5,2));
+		document.write("<h3>Exampleof call function</h3>");
+		function Emp(id,name){
+			this.id=id;
+			this.name=name;
+		}
+		function PermanentEmp(id,name){
+			Emp.call(this,id,name);
+		}
+
+		function TemporaryEmp(id,name){
+			Emp.call(this,id,name);
+		}
+
+		var pEmp=new PermanentEmp(1,"Sandeep kumar");
+		var tEmp =new TemporaryEmp(2,"karan kumar");
+		document.writeln(pEmp.id + " "+ pEmp.name);
+		document.writeln("<br>");
+		document.writeln(tEmp.id+ " " +tEmp.name);
+
+
+		// document.writeln(new PermanentEmp(1,"Sandeep Kumar") .id);
+		// document.writeln(new PermanentEmp(1,"Sandeep Kumar ") .name);
+
+	</script>
+
+</body>
+</html>

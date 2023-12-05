@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Example Encapsulation </title>
+</head>
+<body>
+	<script type="text/javascript">
+		// class Student{
+		// 	constructor(){
+		// 		var name;
+		// 		var marks;
+		// 	}
+		// 	getName(){
+		// 		return this.name;
+		// 	}
+		// 	setName(name){
+		// 		this.name=name;
+		// 	}
+		// 	getMarks(){
+		// 		return this.marks;
+		// 	}
+		// 	setMarks(marks){
+		// 		this.marks=marks;
+		// 	}
+		// }
+
+
+		// var stud =new Student();
+		// stud.setName("Sandeep");
+		// stud.setMarks(90);
+
+		// document.writeln(stud.getName() + " has secured" +  stud.getMarks() +  "     marks ");
+		// Encapsulation prototype
+
+		function Student(name,marks){
+			var sName =name;
+			var sMarks =marks;
+
+			Object.defineProperty(this,"name",{
+				get:function(){
+					return sName;
+
+				},
+				set:function(sName){
+					this.sName =sName;
+
+				}
+			});
+		
+
+Object.defineProperty(this,"marks",{
+				get:function(){
+					return sMarks;
+
+				},
+				set:function(sMarks){
+					this.sMarks =sMarks;
+
+				}
+			});
+}
+var stud =new Student("Sandeep",19);
+document.writeln(stud.name+ " has secured " + stud.marks + "marks");
+		
+
+
+
+
+
+
+		
+
+	</script>
+
+</body>
+</html>

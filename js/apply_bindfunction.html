@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Example of Apply and Bind function</title>
+</head>
+<body>
+	<script type="text/javascript">
+		// document.write("<h3>Apply function");
+		// document.write("<br>");
+		// var arr =[7,5,9,1];
+		// var max = Math.max.apply(this,arr);
+		// var min = Math.min.apply(this,arr);
+		// document.writeln("array value are");
+		// document.write("<br>")
+
+		// for(value of arr){
+		// 	document.writeln(value);
+		// }
+		// document.writeln("<br>");
+		// document.writeln("Max and min value are");
+		// document.writeln("<br>")
+		// document.writeln(max);
+		// document.writeln(min);
+
+
+		var arr1=[1,2,3,4];
+		var arr2 =[5,6,7,8];
+		document.write("<h3> Example to join two array using apply()</h3>");
+		document.writeln("<br>");
+		document.writeln(" First array values are");
+		document.writeln("<br>");
+		for(value of arr1){
+			document.writeln(value);
+			document.write("<br>");
+		}
+		document.writeln(" Second  array values are");
+		document.writeln("<br>");
+		for(value of arr2){
+			document.writeln(value);
+			document.write("<br>");
+		}
+		arr1.push.apply(arr1,arr2);
+		document.writeln("<br>");
+		document.writeln("Contcatenated array is:" + arr1)
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Example of Array method 3</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+		// array method for include()
+		var arr1=["c","java","Python","Data","java","Pycharm"];
+		document.writeln(" Using Include() Method : " + arr1.includes("java"));
+
+		 // Array method using indexOf()
+
+		 document.writeln("<br><br>");
+		 document.writeln("To check the index of 'java using indexOf():" + arr1.indexOf("java",2));
+
+
+		 // Array method for isArray()
+		 document.writeln("<br>");
+		 document.writeln("To check if the passed values  are an array using isArray():" + Array.isArray(1,4,6,8));
+		 document.writeln("<br>");
+		 document.writeln("To check if the passed values  are an array using isArray():" + Array.isArray(arr1));
+
+		 //Array methodfor join()
+		 document.writeln("<br>");
+		 document.writeln("arr1 after join():" + arr1.join('$'));
+
+		 //Array method for keys()
+
+		 document.writeln("<br><br>");
+		 var keyArray = arr1.keys();
+		 document.writeln("To check for keys in the array:" + keyArray + "<br>");
+		 document.writeln("Values in the keyArray is :<br>");
+		 for(keys of  keyArray){
+		 	document.writeln(keys);
+
+		 	//lastindexof() method of Array
+		 	 document.writeln("<br><br>");
+		 document.writeln("To check the index of 'java using lastindexOf():" + arr1.lastIndexOf("java"));
+
+
+
+		 //Array method for map()
+		 document.writeln("<br><br>");
+		 var arr2=[20,30,40];
+		 var mapArray = arr2.map(x=> x/5);
+		 document.writeln("Map array using arr2():" + mapArray );
+
+
+
+
+
+
+
+
+
+
+		 }
+
+
+
+
+
+
+
+		
+	</script>
+
+</body>
+</html>

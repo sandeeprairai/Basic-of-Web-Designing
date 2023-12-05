@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Array 2 method using javascript</title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		// Array fill Method-it fills element into an array with static values.
+
+
+		var language = ["html","java","C"];
+		var result1 = language.fill("javaScript");
+		document.writeln("Array after performing fill():" + result1);
+		var result2= language.fill("html",0,1);
+		document.write("<br>");
+		document.writeln("Array after performing fill():" + result2);
+
+
+		// Array from() method
+		var fromArray =Array.from("Hello");
+		document.writeln("<br> Array after applying from(): " + fromArray);
+		document.writeln("<br>");
+
+		var fun = function(){
+			document.writeln(Array.from(arguments));
+		}
+
+		fun("html","java","c");
+		document.writeln("<br>");
+		document.writeln("Array after applying filter() method:");
+
+
+		// Array filter() method it retuens the new array based on condition; 
+		var nums =[15,51,43,56,78,98,23];
+		function check(value){
+			return value >30;
+		}
+		document.writeln(nums.filter(check));
+
+		// Array find() method
+		document.write("<br>");
+		var findArray = nums.find( x=>  x>30);
+		document.writeln("Num array after find():" + findArray);
+
+		// array findindex() method
+		document.writeln("<br>");
+		var finIndexArray = nums.findIndex(x => x>30)
+		document.writeln("Num array after find Index is " + finIndexArray);
+
+
+		//forEach()  method
+		var value=0;
+		document.write( "Num Array after fetch :");
+		document.writeln("<br>");
+		nums.forEach(function(fetch){
+			document.writeln(value+= fetch);
+
+		});
+
+
+
+
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Add event Listener</title>
+</head>
+<body>
+	<p>Example of the addEventListener() method.</p>
+	<p>Click the following button to see the efect</p>
+	<button id="btn"> Click Me</button>
+	<p id="para"></p>
+	<script type="text/javascript">
+		document.getElementById("btn").addEventListener("click",changebackground);
+		function changebackground(){
+			document.body.style.background="pink";
+		}
+
+
+        document.getElementById("btn").addEventListener("click",fun);
+		function fun(){
+			document.getElementById("para").innerHTML="hello World"+"<br>"+ "Welcome to javaTPoint.com";
+		}
+	</script>
+</body>
+</html>

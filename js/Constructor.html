@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Example Constructor</title>
+</head>
+<body>
+	<script type="text/javascript">
+		// class Employee{
+		// 	constructor(){
+		// 		this.id=100;
+		// 		this.name="ABC";
+		// 	}
+		// }
+		// var emp=new Employee();
+		// document.writeln(emp.id+ " " + emp.name);
+		// var emp2=new Employee();
+		// document.writeln(emp2.id + " " + emp2.name);
+		// Super Keyword
+		class CompanyName{
+			constructor(){
+				this.CompanyName = "LearnVern";
+			}
+		}
+		// Child class
+		class Employee extends CompanyName{
+			constructor(id,name){
+				super();
+				this.id=id;
+				this.name=name;
+				
+			}
+		}
+		var emp = new Employee(100,"Sandeep");
+		document.writeln(emp.id+ " " + emp.name + " " + emp.CompanyName);
+
+		
+
+
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Example Responsive helper Bootsrap</title>
+
+	<!-- Bootstrap Css -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<style type="text/css">
+		h1{
+			text-align: center;
+			color: darkred;
+		}
+		.floatLeft{
+			width: 200px;
+			background-color: lightsalmon;
+			padding: 20px;
+			border: 2px solid blueviolet;
+			text-align: center;
+
+		}
+		.floatNone{
+			
+			background-color: green;
+			padding: 20px;
+			border: 2px solid blueviolet;
+			text-align: center;
+
+		}
+		.responsiveFloat{
+			width: 300px;
+			background-color: lightcyan;
+			padding: 20px;
+			border: 2px solid blueviolet;
+			text-align: center;
+
+		}
+
+	</style>
+</head>
+<body>
+	<div>
+		<h1>Botsrtap Responsive Helper</h1>
+	</div>
+	<div class="  float-left floatLeft">Tis div is applied with float-left</div>
+	<div class="  float-right floatLeft">Tis div is applied with float-right</div>
+	<div class="  float-none  floatNone">Tis div is applied with float-right</div>
+	<br><br><br><br>
+
+
+	<div class=" float-sm-right responsiveFloat">Tis div will apply floating property based on device</div> <!-- md-755,lg-992,xl -->
+	<div class=" float-md-right responsiveFloat">Tis div will apply floating property based on device</div> 
+	<div class=" float-lg-right responsiveFloat">Tis div will apply floating property based on device</div> 
+	<div class=" float-xl-right responsiveFloat">Tis div will apply floating property based on device</div> 
+
+
+
+
+
+
+
+
+
+
+
+	<!-- Bootstrap JQuery -->
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+</body>
+</html>

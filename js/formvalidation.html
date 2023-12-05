@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form validation -1 Example</title>
+	<style type="text/css">
+		h3{text-align: center;}
+		#errortelephone{
+			color: red;
+			font-size: 20px;
+		}
+	</style>
+</head>
+<body>
+	<script type="text/javascript">
+		 function validateForm(){
+		 	var name=document.myForm.Name.value;
+		 	var password=document.myForm.password.value;
+		 	if (name==null || name=="") {
+		 		alert("Please Enter Name");
+		 		return false;
+		 	} else if( password.length < 6) {
+		 		alert("password must be atlaest of 6 character long");
+		 		return false;
+		 	}
+
+		 }
+		 function validateForm(){
+		 	var password = document.myForm.password.value;
+			var confirmPassword= document.myForm.ConfirmPassword.value;
+
+		 	if(password == confirmPassword){
+		 		return true;
+		 	}else{
+		 		alert("Password doesn't match");
+		 		return false;
+		 	}
+		 }
+		function validateForm(){
+			var telephone=document.myForm.Telephone.value;
+			if( isNaN(telephone)){
+				document.getElementById('errortelephone').innerHTML = "Enter telephone number is not correct."
+				return false
+
+			}else{
+				return true;
+			}
+		}
+
+
+
+		
+	</script>
+	<h3>Registartion form</h3>
+	<form name="myForm" method="post" onsubmit="return validateForm()">
+		Name:<input type="text" name="Name"><br><br>
+		Password:<input type="password" name="password"><br><br>
+		Confirm Password: <input type="password" name="ConfirmPassword">
+		<br><br>
+		Telephone No: <input type="text" name="Telephone">
+		<span id="errortelephone"></span><br><br>
+		<input type="submit" value="submit">
+
+
+	
+
+	</form>
+
+</body>
+</html>

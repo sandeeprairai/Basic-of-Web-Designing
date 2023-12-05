@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Assignment no 7</title>
+	<style type="text/css">
+		form{
+			text-align: center;
+			background-color: cyan;
+
+		}
+	</style>
+</head>
+<body>
+	<script type="text/javascript">
+		function validateForm(){
+			var name=document.myForm.Name.value;
+			var password=document.myForm.password.value;
+			var email=document.myForm.email.value;
+			var atposition = email.indexOf('@');
+			var dotposition =email.indexOf('.');
+			var telephone=document.myForm.Telephone.value;
+			var confirmPassword= document.myForm.ConfirmPassword.value;
+			if (name==null || name=="") {
+		 		alert("Please Enter Name");
+		 		return false;
+		 	} else if( password.length < 6) {
+		 		alert("password must be atlaest of 6 character long");
+		 	}
+		 }
+		 	
+		
+
+		 
+
+
+			</script>
+
+	<form name="myForm" method="post" onsubmit="return validateForm()">
+		<label>First Name:<input type="text" name="name"><br><br></label>
+		<label>Last Name:<input type="" name="name"><br><br></label>
+		<label>Email:<input type="text" name="Email"><br><br></label>
+		<label>Telephone Number:<input type="text" name="telephone"><br><br></label>
+		Password:<input type="password" name="password"><br><br>
+		Confirm password:<input type="password" name="Confirm Password"><br><br>
+		<input type="submit" name="submit">
+
+	</form>
+
+</body>
+</html>

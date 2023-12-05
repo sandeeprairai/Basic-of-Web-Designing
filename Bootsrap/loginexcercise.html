@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sign Up 2</title>
+	<style type="text/css">
+		
+	</style>
+</head>
+<body align="center">
+	<h4>Create Your  Account</h4>
+	<table cellspacing="2" align="center" cellpadding="8" border="0">
+		<tr>
+			<td>Name</td>
+			<td><input type="text" placeholder="Enter your name" id="name"></td>
+		</tr>
+		<tr>
+			<td>Email</td>
+			<td><input type="text" placeholder="Enter your Email" id="email"></td>
+		</tr>
+		<tr>
+			<td>Password</td>
+			<td><input type="text" placeholder="Enter Your Password"  id="password"></td>
+		</tr>
+		<tr>
+			<td> Confirm Password</td>
+			<td><input type="text" placeholder="Confirm your Password" id="confirmPassword"></td>
+
+		</tr>
+		<tr>
+			<td><input type="submit" value="Create" onclick="createAccount()"></td>
+		</tr>
+		
+	</table>
+
+	<script type="text/javascript">
+		function createAccount(){
+			var name=document.getElementById("name").value;
+			var email=document.getElementById("email").value;
+			var password=document.getElementById("password").value;
+			var confirmPassword=document.getElementById("confirmPassword").value;
+
+			var letters=/^[A-Za-z]+$/;
+			var email_value=/^\s*[\w\-\+_]+(\.[\w\-\+_]+)*\@[\w\-\+_]+\.[\w\-\+_]+(\.[\w\-\+_]+)*\s*$/;
+
+			if(name == "" || email == "" || password== "" || confirmPassword == ""){
+				alert("Enter all details")
+			}
+			else if(!letters.test(name)){
+				alert("Name is incorrect and must contain alphabet only.");
+			}else if(!email_value.test(email)){
+				alert("Email id is not in format");
+			}else if(password != confirmPassword){
+				alert("Password is o\not matching");
+			}else if(document.getElementById("email").value.length>12){
+				alert("Maximum length for password is 12");
+			}else if(document.getElementById("email").value.length<6){
+				alert("Minimum length for password is 6");
+			}else{
+				alert("Your account has been created successfully");
+				window.location="Form.html";
+			}
+
+
+
+
+
+		}
+		
+	</script>
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Example Async  Await for promise</title>
+</head>
+<body>
+
+	<p id="result"></p>
+	<!-- <script type="text/javascript">
+
+		function display(value){
+			document.getElementById("result").innerHTML=value;
+		}
+
+		  async function myFunction(){
+		 	return "Sandeep is awesome";
+		 }
+
+		 myFunction().then(
+		 	function(value) {display(value)},
+		 	function(error){display(error)}
+		 	);
+
+		
+	</script> -->
+	<script type="text/javascript">
+		
+		async function myDisplay(){
+			let promise=new Promise( function(resolve,reject){
+				setTimeout(function(){
+					resolve("Sandeep kumar is awesome")
+				},3000)
+
+			});
+			document.getElementById("result").innerHTML = await promise;
+		}
+		myDisplay();
+	</script>
+
+</body>
+</html>

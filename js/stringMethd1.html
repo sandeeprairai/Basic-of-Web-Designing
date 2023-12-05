@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>String method 2</title>
+</head>
+<body>
+	<script type="text/javascript">
+		//replace()method
+
+		str1=" This is LearnEarn!";
+		str2="  This is HTML,html is must to learn web Designing  "
+		document.writeln("Incorrect String is:" + str1 );
+		document.write("<br>Corrected String is:" + str1.replace('Earn','Vern'));
+
+		document.writeln("<br>replace html: "+str2.replace(/HTML/gi,'CSS'));
+
+
+		// substr()
+		document.writeln("<br>New generated string is:"  + str2.substr());
+		document.writeln("<br>New generated string is:"  + str2.substr(13));
+		document.writeln("<br>New generated string is:"  + str2.substr(13,9));
+
+
+		//substring()
+		document.writeln("<br>New generated substring is:"  + str2.substring());
+		document.writeln("<br>New generated substring is:"  + str2.substring(13));
+		document.writeln("<br>New generated substring is:"  + str2.substring(13,9));
+
+
+		// slice()
+		document.writeln("<br><br> Sliced string :" +str2.slice());
+		document.writeln("<br> Sliced string :" +str2.slice(14,24));
+		document.writeln("<br> Sliced string :" +str2.slice(-14));
+
+		// toLowerCase()
+		str3="THIS IS SANDEEP KUMAR FROM VARANASI";
+		document.writeln("<br><br>Lowercased String using toLowerCase():" + str3.toLowerCase());
+
+// toLocaleLowerCase()
+		str3="THIS IS SANDEEP KUMAR FROM VARANASI";
+		document.writeln("<br><br>Lowercased String using  toLocaleLowerCase(): " + str3.toLocaleLowerCase());
+
+
+
+
+		// touppercase()
+		str4="this  string is in lowercase"
+		document.writeln("<br><br>Uppercased string  using touppercase():" + str4.toUpperCase());
+
+
+		// toLocaleuppercase()
+		str4="this  string is in lowercase"
+		document.writeln("<br><br>Uppercased string  using toLocaleuppercase():" + str4.toLocaleUpperCase());
+
+		// tostring()
+		document.writeln("<br><br> use toString() on a string: "+ str1.toString());
+
+
+		// valueOf()
+		str5=new String("This string is defined using an object");
+		document.writeln("<br><br>The value of str5 using valueOf() :" + str5.valueOf());
+
+		// spilt()
+		document.writeln("<br><br> str2 after applying split() method" + str2.split("h"));
+
+		// trim()
+		document.writeln("<br><br> str2 after applying trim() method:  " + str2.trim());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+	</script>
+
+</body>
+</html>

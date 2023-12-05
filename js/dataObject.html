@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Example date()</title>
+</head>
+<body>
+	<script type="text/javascript">
+		// using Date()
+		var d=new Date();
+		document.writeln("Todays date is: " + d);
+
+		// Using date(year,month,day,hours,minute,seconds,miliseconds):
+		var d1=new Date(2022,6,24,3,27,56,5,50);
+		document.writeln("<br><br>Date: "+ d1); 
+
+
+		// date(dateString)
+		var d2=new Date("October 12,2014 12:56:03");
+		document.writeln("<br>Date:" + d2);
+
+		// date(milliseconds)
+		var d3=new Date(10000);
+		document.writeln("<br><br>Date: " + d3);
+
+
+		document.writeln("<br><h3>Data Methods</h3>");
+		var d5 = new Date();
+		var day = "";
+		var month="";
+
+		switch(d1.getDay()){
+			case 0:
+			day="Sunday";
+			break;
+			case 1:
+			day="Monday";
+			break;
+			case 2:
+			day="Tuesday";
+			break;
+			case 3:
+			day="Wednesday";
+			break;
+			case 4:
+			day="Thursady";
+			break;
+			case 5:
+			day="Friday";
+			break;
+			case 6:
+			day="Saturday";
+			break;
+		}
+		switch(d1.getMonth()){
+			case 0:
+			month="January";
+			break;
+			case 1:
+			month="February";
+			break;
+			case 2:
+			month="March";
+			break;
+			case 3:
+			month="April";
+			break;
+			case 4:
+			month="May";
+			break;
+
+			case 5:
+			month="June";
+			break;
+			case 6:
+			month="July";
+			break;
+			case 7:
+			month="August";
+			break;
+			case 8:
+			month="September";
+			break;
+			case 9:
+			month="October";
+			break;
+			case 10:
+			month="November";
+			break;
+			case 11:
+			month="December";
+			break;
+			
+		}
+
+
+
+
+
+
+document.writeln("Today Date is :" + d5.getDate() + " <br>current day is: " +day);
+		document.writeln("<br>current Month is :" + month);
+			document.writeln("<br>Full year  is :" + d5.getUTCFullYear());
+			document.writeln("<br>current Hours  is :" + d5.getHours());
+			document.writeln("<br>current minute is is :" + d5.getMinutes());
+				document.writeln("<br>current second  is :" + d5.getSeconds());
+
+
+
+
+
+
+
+	</script>
+
+</body>
+</html>

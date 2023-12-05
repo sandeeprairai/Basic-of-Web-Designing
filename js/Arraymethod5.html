@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Array method 5</title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		// array sort() method
+		var num=[8,6,4,3,7,1];
+		var language=["HTML","CSS","Java","Bootsrap","Python"];
+		var arr1 = [8,6,4,3,7,1];
+		document.writeln("Srted number Array: " + num.sort() + "<br>");
+		document.writeln("Srted string  Array: " + language.sort() + "<br>");
+
+		document.writeln("The minumum number from array " + arr1);
+		var result = arr1.sort();
+		document.writeln("is :" + result[0]);
+
+
+
+		//spilce(start,delete,...element) method
+		var weekdays =["Monday","Tuesday","Thursday","Friday"];
+		var addwednesday = weekdays.splice(2,0,"Wednesday");
+		document.writeln("<br>br> Wekdays array :" + weekdays);
+		var weekdays=["Monday","tuesday","saturday","sunday","Thursday"];
+		document.writeln("<br> Incorrect Weekdays array :" + weekdays);
+		var  removedContent = weekdays.splice(2,2,"Wednesday");
+		document.writeln("<br> correct weekdays array:" + weekdays);
+		document.writeln("<br> correct weekdays  array :" + weekdays);
+		document.writeln("<br> Removed content  from weekdays array:" + removedContent );
+
+
+		//ToLocalestring
+		 var weekdays=["Monday","Tuesday","Wednesday","Thursday","Friday","saturday","sunday"];
+		var str=weekdays.toLocaleString();
+		document.writeln("<br><br> weekdays in string format:" + str);
+		console.log(str);
+
+		var arr2 =['a',1,new Date('8 jan 1998 17:25:0 UTC')];
+		var str = arr2.toLocaleString('en',{timeZone:"UTC"});
+		console.log("Converted Element to string is :" + str);
+
+		// tostring()
+		var weekdays=["Monday","Tuesday","Wednesday","Thursday","Friday","saturday","sunday"];
+		document.writeln("<br><br> Weekdays in string format:" + weekdays.toString());
+
+		//  opposite of shift i.i it will add the value
+		var valuesarray=weekdays.values();
+		var num1=[8,5,2];
+		var result=num1.unshift(7);
+		document.writeln("<br><br> Adding 7 in the beggining of the array:" + num1);
+		document.writeln(valuesarray.next().value + "<br>");
+		document.writeln(valuesarray.next().value + "<br>");
+		document.writeln(valuesarray.next().value + "<br>");
+		document.writeln(valuesarray.next().value + "<br>");
+		document.writeln(valuesarray.next().value + "<br>");
+		document.writeln(valuesarray.next().value + "<br>");
+		document.writeln(valuesarray.next().value + "<br>");
+		document.writeln(valuesarray.next().value + "<br>");
+
+		// // values()
+		// document.writeln("<br><br> After adding an iterator to weekdays ")
+		// var valuesarray=weekdays.values();
+		// for(value of valuesarray){
+		// 	document.writeln(value + "<br>")
+		// }
+		// console.log(valuesarray);
+
+
+
+
+
+
+
+
+
+	</script>
+
+</body>
+</html>

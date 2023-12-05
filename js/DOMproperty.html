@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Example DOM propert</title>
+</head>
+<body>
+	<!-- getElementById -->
+	<!-- <form>
+		Enter Telephone Number:<input type="text" id="tln1"><br><br>
+		<input type="button" value="Show contact Number" onclick="showNumber()">
+
+
+
+	</form>
+
+
+
+
+	<script type="text/javascript">
+		//getElementById()
+		function showNumber(){
+			var telephoneNumber = document.getElementById("tln1").value;
+			alert("Telephone Number is ;" + telephoneNumber);
+
+		}
+
+
+		
+
+
+	</script> -->
+
+	<!-- getElemntByClassName()
+ -->
+  <!-- <div class="abc">This is a class 1st</div>
+   <div class="abc">This is a class 2nd </div>
+    <div class="abc">This is a class 3rd </div>
+
+ <script type="text/javascript">
+ 	var x=document.getElementsByClassName('abc');
+ 	for(value of x){
+ 		alert(value.innerText);
+
+ 	}
+ 	
+ 	
+ </script>
+ -->
+
+ <!-- getElementByname() -->
+
+ <!-- <script type="text/javascript">
+ 	
+ 	function showElement(){
+ 		var x =document.getElementsByName("gender");
+ 		alert("Total geneder available:" + x.length);
+ 		alert("value are:" + x[0].defaultValue);
+}
+ </script>
+<form>
+	Male: <input type="radio" name="gender" value="Male"><br>
+	Female: <input type="radio" name="gender" value="Female"><br>
+	Other: <input type="radio" name="gender" value="Other"><br>
+
+	<input type="button" value="Show data" onclick="showElement()">
+
+	</form> -->
+
+<!-- getElementByTagName() -->
+<script type="text/javascript">
+	function count(){
+		var x = document.getElementsByTagName("p");
+		var i =document.getElementsByTagName("input")
+		alert("Total Number of p tag are:" + x.length + " Total no of input tag are" + i.length);
+	}
+	
+</script>
+<p>This is a p tag</p>
+<p>This is a p tag</p>
+<p>This is a p tag</p>
+<p>This is a p tag</p>
+<p>This is a p tag</p>
+<form>
+	<input type="button" value="Count tag number" onclick="count()">
+</form>
+
+
+
+</body>
+</html>
