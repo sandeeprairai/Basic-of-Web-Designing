@@ -1,1 +1,4 @@
-## Basic of Web Designing html,css,javascript
+## Basic of Web Designing 
+- html
+- css
+- javascript
